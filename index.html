@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Services LLC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Roboto',sans-serif;
+background:#f2f5f8;
+color:#2d3436;
+}
+
+/* Slider */
+
+.slider{
+position:relative;
+overflow:hidden;
+height:350px;
+}
+
+.slides{
+display:flex;
+width:400%;
+animation:slide 16s infinite;
+}
+
+ .slides img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+@keyframes slide{
+0%{margin-left:0;}
+20%{margin-left:0;}
+25%{margin-left:-100%;}
+45%{margin-left:-100%;}
+50%{margin-left:-200%;}
+70%{margin-left:-200%;}
+75%{margin-left:-300%;}
+95%{margin-left:-300%;}
+100%{margin-left:0;}
+}
+
+/* container */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* sections */
+
+.section{
+background:white;
+margin:25px 0;
+padding:25px;
+border-radius:15px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+font-size:2rem;
+margin-bottom:15px;
+font-weight:700;
+}
+
+/* services */
+
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.service-card{
+flex:1 1 calc(50% - 10px);
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+padding:15px;
+border-radius:10px;
+font-weight:500;
+display:flex;
+align-items:center;
+gap:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-card img{
+width:40px;
+height:40px;
+}
+
+/* pay rates */
+
+.payrates p{
+background:linear-gradient(135deg,#a1c4fd,#c2e9fb);
+padding:10px 15px;
+border-radius:8px;
+margin:8px 0;
+font-weight:500;
+}
+
+/* loyalty */
+
+.highlight{
+background:#ffeaa7;
+border-left:6px solid #fdcb6e;
+padding:20px;
+font-size:1.1rem;
+}
+
+/* contact */
+
+.contact p{
+margin:8px 0;
+}
+
+/* available hours */
+
+.hours{
+background:#dff9fb;
+padding:10px 15px;
+border-radius:8px;
+display:inline-block;
+font-weight:500;
+margin-top:10px;
+}
+
+/* whatsapp buttons */
+
+.whatsapp{
+position:fixed;
+right:25px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+.whatsapp1{
+bottom:25px;
+}
+
+.whatsapp2{
+bottom:85px;
+background:#128C7E;
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+.service-card{
+flex:1 1 100%;
+}
+
+.slides img{
+height:220px;
+}
+
+h2{
+font-size:1.5rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+          <div class="slider">
+  <div class="slides">
+
+<img src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1600&auto=format&fit=crop" alt="Warehouse Jobs">
+
+<img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=1600&auto=format&fit=crop" alt="Car Detailing">
+
+<img src="https://images.unsplash.com/photo-1581092921461-7d65ca45393a?q=80&w=1600&auto=format&fit=crop" alt="Security Cameras">
+
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop" alt="Cleaning Service">
+
+  </div>
+</div>
+
+   
+
+<div class="container">
+
+<div class="section">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="service-card">
+<img src="https://img.icons8.com/ios-filled/50/000000/broom.png">
+Cleaning Services
+</div>
+
+<div class="service-card">
+<img src="https://img.icons8.com/ios-filled/50/000000/restaurant.png">
+Food Catering
+</div>
+
+<div class="service-card">
+<img src="https://img.icons8.com/ios-filled/50/000000/car.png">
+Car Detailing
+</div>
+
+<div class="service-card">
+<img src="https://img.icons8.com/ios-filled/50/000000/electric-plug.png">
+Handy Jobs & Electrical
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Pay Rates</h2>
+
+<div class="payrates">
+<p>Basic Cleaning: Contact for pricing</p>
+<p>Car Detailing: Contact for pricing</p>
+<p>Electrical Work: Contact for pricing</p>
+</div>
+
+</div>
+
+<div class="section highlight">
+<h2>Loyalty Program</h2>
+<p>Get special discounts for repeat customers and monthly service packages.</p>
+</div>
+
+<div class="section contact">
+<h2>Contact Info</h2>
+
+<p>Armghan Iqbal (M): +1 (816) 500-4978</p>
+<p>Umair: +1 (816) 882-6512</p>
+
+<p class="hours">Available Hours: From 8 AM to 12 PM, Monday to Sunday</p>
+
+</div>
+
+<div class="section">
+<h2>For Customers</h2>
+<p>We provide reliable home and business services with professional staff and high-quality results.</p>
+</div>
+
+</div>
+
+<!-- WhatsApp Buttons -->
+
+<a href="https://wa.me/18165004978" target="_blank" class="whatsapp whatsapp1">WhatsApp Armghan</a>
+
+<a href="https://wa.me/18168826512" target="_blank" class="whatsapp whatsapp2">WhatsApp Umair</a>
+
+</body>
+</html>
